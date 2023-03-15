@@ -23,9 +23,6 @@ int main(){
 	Node first, second;
 	ptrnode head, tail, ptr;
 
-	//building a lis
-	//first.data = test;
-	//test_two.data = test_two;
 	first.data  = {1, 2, 5, 6, 7, 11, 45, 66, 22, 11, 401};	    first.link  = &second;
 	second.data = {0, 45, 32, 22, 41, 55, 99, 9, 42,  402};		second.link = &first;
 
