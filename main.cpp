@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <random>
+//just incase i needed randomness
+/*
 template <typename T>
 inline const T Rand_Gen(const T& iVal1, const T& iVal2)
 {
@@ -14,7 +16,7 @@ inline const T Rand_Gen(const T& iVal1, const T& iVal2)
 
 	return retVal;
 }
-
+*/
 
 int main(){
 
@@ -24,7 +26,7 @@ int main(){
 	//building a lis
 	//first.data = test;
 	//test_two.data = test_two;
-	first.data  = {1, 2, 5, 6, 7, 11, 45, 66, 22, 11, 401};	        first.link  = &second;
+	first.data  = {1, 2, 5, 6, 7, 11, 45, 66, 22, 11, 401};	    first.link  = &second;
 	second.data = {0, 45, 32, 22, 41, 55, 99, 9, 42,  402};		second.link = &first;
 
 	//the node of first is the head
@@ -45,7 +47,7 @@ int main(){
 			for(auto& i : ptr -> data){
 					std::cout << "tail: \t" << '\t' << tail << '\t'<< i << '\n';
 			}
-			ptr = NULL;			second.link = nullptr;
+			ptr = nullptr;			second.link = nullptr;
 
 		}
 			//ptr = ptr -> link;
