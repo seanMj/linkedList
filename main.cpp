@@ -40,15 +40,15 @@ int main(){
 	{
 		while(ptr != nullptr)
 		{
-			for(auto& i : ptr -> data){
-				std::cout << "head: \t"  << '\t' << head << '\t' << i << '\n';
-			}
-			ptr = tail;
-			for(auto& i : ptr -> data){
-					std::cout << "tail: \t" << '\t' << tail << '\t'<< i << '\n';
-			}
-			ptr = nullptr;			second.link = nullptr;
-
+		    for(auto& i : ptr -> data){
+		        std::cout << "head: \t"  << '\t' << head << '\t' << i << '\n';
+		    }
+		    ptr = tail;
+		    for(auto& i : ptr -> data){
+			    std::cout << "tail: \t" << '\t' << tail << '\t'<< i << '\n';
+	            }
+		    ptr = nullptr;			
+                    second.link = nullptr;
 		}
 		//intrestingly, by placing this code below creates an error on runtime execution
 		second.link = nullptr;
