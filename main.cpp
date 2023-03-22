@@ -4,18 +4,8 @@
 #include <random>
 //just incase i needed randomness
 /*
-template <typename T>
-inline const T Rand_Gen(const T& iVal1, const T& iVal2)
-{
-	std::random_device device;
-	std::mt19937 e(device());
-	std::uniform_int_distribution<T> rd(iVal1, iVal2);
-
-	T retVal = 0;
-	retVal = rd(e);
-
-	return retVal;
-}
+Just practicing data structures until I can afford to buy a book for this topic.
+Once I do have a good grasp im going to try and get a job coding :)
 */
 
 int main(){
