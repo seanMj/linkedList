@@ -23,16 +23,19 @@ int main(){
 	Node first, second;
 	ptrnode head, tail, ptr;
 
-	first.data  = {1, 2, 5, 6, 7, 11, 45, 66, 22, 11, 401};	    first.link  = &second;
-	second.data = {0, 45, 32, 22, 41, 55, 99, 9, 42,  402};		second.link = &first;
+	first.data  = {1, 2, 5, 6, 7, 11, 45, 66, 22, 11, 401};
+	first.link  = &second;
+	second.data = {0, 45, 32, 22, 41, 55, 99, 9, 42,  402};	
+	second.link = &first;
 
 	//the node of first is the head
 	head = &first;
-	ptr = head;
+	
+        ptr = head;
 
 	tail = &second;
-	int ii = 0;
-
+	
+        int ii = 0;
 	if(ptr != nullptr)
 	{
 		while(ptr != nullptr)
@@ -47,9 +50,6 @@ int main(){
 			ptr = nullptr;			second.link = nullptr;
 
 		}
-			//ptr = ptr -> link;
-			//++ii;
-			//if(ii == 20)
 		//intrestingly, by placing this code below creates an error on runtime execution
 		second.link = nullptr;
 
